@@ -13,7 +13,8 @@ const sentence = document.getElementById("sentence");
 // ボタンを取得
 const button = document.getElementById("spin-button");
 
-let index = 2;
+//let index = 2;
+let index = Math.floor(Math.random() * subjects.length);
 
 button.addEventListener("click", function () {
    // 固定値を直接代入していた以前の書き方
