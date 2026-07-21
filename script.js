@@ -21,8 +21,8 @@ button.addEventListener("click", function () {
     let objectIndex = Math.floor(Math.random() * objects.length);
 
     subject.textContent = subjects[subjectIndex];
-        verb.textContent = verbs[verbIndex];
-        object.textContent = objects[objectIndex];
+    verb.textContent = verbs[verbIndex];
+    object.textContent = objects[objectIndex];
 
         sentence.textContent =
             subjects[subjectIndex] + " " +
