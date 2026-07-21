@@ -14,7 +14,7 @@ const sentence = document.getElementById("sentence");
 const button = document.getElementById("spin-button");
 
 button.addEventListener("click", function () {
-
+   // 固定値を直接代入していた以前の書き方
    // subject.textContent = "The cat";
    // verb.textContent = "plays";
    // object.textContent = "soccer";
