@@ -13,6 +13,8 @@ const sentence = document.getElementById("sentence");
 // ボタンを取得
 const button = document.getElementById("spin-button");
 
+let index = 2;
+
 button.addEventListener("click", function () {
    // 固定値を直接代入していた以前の書き方
    // subject.textContent = "The cat";
@@ -20,13 +22,13 @@ button.addEventListener("click", function () {
    // object.textContent = "soccer";
    // sentence.textContent = "The cat plays soccer.";
 
-    subject.textContent = subjects[2];
-    verb.textContent = verbs[2];
-    object.textContent = objects[2];
+    subject.textContent = subjects[index];
+    verb.textContent = verbs[index];
+    object.textContent = objects[index];
 
     sentence.textContent =
-        subjects[2] + " " +
-        verbs[2] + " " +
-        objects[2] + ".";
+        subjects[index] + " " +
+        verbs[index] + " " +
+        objects[index] + ".";
 
 });
