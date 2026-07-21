@@ -31,4 +31,10 @@ button.addEventListener("click", function () {
         verbs[index] + " " +
         objects[index] + ".";
 
+    if (index < 3) {
+        index++;
+    } else {
+        index = 0;
+    }
+
 });
