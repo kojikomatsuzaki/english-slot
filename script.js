@@ -16,11 +16,9 @@ const button = document.getElementById("spin-button");
 button.addEventListener("click", function () {
    // 固定値を直接代入していた以前の書き方
 
-   //let index = 2;
-    let index = Math.floor(Math.random() * subjects.length);
-    let subjectIndex = Math.floor(Math.random() * subjects.length)
-    let verbIndex = Math.floor(Math.random() * verbs.length)
-    let objectIndex = Math.floor(Math.random() * objects.length)
+    let subjectIndex = Math.floor(Math.random() * subjects.length);
+    let verbIndex = Math.floor(Math.random() * verbs.length);
+    let objectIndex = Math.floor(Math.random() * objects.length);
 
     subject.textContent = subjects[subjectIndex];
         verb.textContent = verbs[verbIndex];
@@ -31,7 +29,4 @@ button.addEventListener("click", function () {
             verbs[verbIndex] + " " +
             objects[objectIndex] + ".";
 
-***
-
-こんな感じ？
 });
