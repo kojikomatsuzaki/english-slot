@@ -18,25 +18,20 @@ button.addEventListener("click", function () {
 
    //let index = 2;
     let index = Math.floor(Math.random() * subjects.length);
-   
-   // subject.textContent = "The cat";
-   // verb.textContent = "plays";
-   // object.textContent = "soccer";
-   // sentence.textContent = "The cat plays soccer.";
+    let subjectIndex = Math.floor(Math.random() * subjects.length)
+    let verbIndex = Math.floor(Math.random() * verbs.length)
+    let objectIndex = Math.floor(Math.random() * objects.length)
 
-    subject.textContent = subjects[index];
-    verb.textContent = verbs[index];
-    object.textContent = objects[index];
+    subject.textContent = subjects[subjectIndex];
+        verb.textContent = verbs[verbIndex];
+        object.textContent = objects[objectIndex];
 
-    sentence.textContent =
-        subjects[index] + " " +
-        verbs[index] + " " +
-        objects[index] + ".";
+        sentence.textContent =
+            subjects[subjectIndex] + " " +
+            verbs[verbIndex] + " " +
+            objects[objectIndex] + ".";
 
-    if (index < 3) {
-        index++;
-    } else {
-        index = 0;
-    }
+***
 
+こんな感じ？
 });
