@@ -15,12 +15,21 @@ const button = document.getElementById("spin-button");
 
 button.addEventListener("click", function () {
 
-    subject.textContent = "The cat";
+   // subject.textContent = "The cat";
 
-    verb.textContent = "plays";
+   // verb.textContent = "plays";
 
-    object.textContent = "soccer";
+   // object.textContent = "soccer";
 
-    sentence.textContent = "The cat plays soccer.";
+   // sentence.textContent = "The cat plays soccer.";
+
+    subject.textContent = subjects[1];
+    verb.textContent = verbs[1];
+    object.textContent = objects[1];
+
+    sentence.textContent =
+        subjects[1] + " " +
+        verbs[1] + " " +
+        objects[1] + ".";
 
 });
