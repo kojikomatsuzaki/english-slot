@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>英文スロット</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>英文スロット</h1>
+
+    <p class="description">
+      ボタンを押して、英文を作ってみよう。
+    </p>
+
+    <section class="slot-machine" aria-label="英文スロット">
+      <div class="slot">
+        <span class="slot-label">主語</span>
+        <span id="subject" class="slot-word">Tom</span>
+      </div>
+
+      <div class="slot">
+        <span class="slot-label">動詞</span>
+        <span id="verb" class="slot-word">likes</span>
+      </div>
+
+      <div class="slot">
+        <span class="slot-label">目的語</span>
+        <span id="object" class="slot-word">apples</span>
+      </div>
+    </section>
+
+    <p id="sentence" class="sentence">
+      Tom likes apples.
+    </p>
+
+    <button id="spin-button" type="button">
+      英文を作る
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
