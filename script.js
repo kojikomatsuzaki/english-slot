@@ -16,20 +16,17 @@ const button = document.getElementById("spin-button");
 button.addEventListener("click", function () {
 
    // subject.textContent = "The cat";
-
    // verb.textContent = "plays";
-
    // object.textContent = "soccer";
-
    // sentence.textContent = "The cat plays soccer.";
 
-    subject.textContent = subjects[1];
-    verb.textContent = verbs[1];
-    object.textContent = objects[1];
+    subject.textContent = subjects[2];
+    verb.textContent = verbs[2];
+    object.textContent = objects[2];
 
     sentence.textContent =
-        subjects[1] + " " +
-        verbs[1] + " " +
-        objects[1] + ".";
+        subjects[2] + " " +
+        verbs[2] + " " +
+        objects[2] + ".";
 
 });
